@@ -8,6 +8,6 @@ curDir = os.path.abspath(os.path.join(curfilePath, os.pardir))
 # this will return parent directory.
 parentDir = os.path.abspath(os.path.join(curDir, os.pardir)) #use to load the CSV files
 
-faetures_test_set , lable_test_set = load_dataset(parentDir + '/trin-SD01/trin-SD01.csv')
+faetures_test_set, lable_test_set ,names_test_set = load_dataset(parentDir + '/trin-SD01/trin-SD01.csv')
 print(lable_test_set.shape)
 print(lable_test_set)
